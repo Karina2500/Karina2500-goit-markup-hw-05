@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -21,9 +21,15 @@
             <nav class="main-nav">
                 <a href="index.html" class="logo link"><span class="logo-color">Web</span>Studio</a>
                 <ul class="site-nav list">
-                    <li class="site-item"><a href="./index.html" class="menu-link link current">Студия</a></li>
-                    <li class="site-item"><a href="./portfolio.html" class="menu-link link">Портфолио</a></li>
-                    <li class="site-item"><a href="/" class="menu-link link">Контакты</a></li>
+                    <li class="site-item">
+                        <a href="./index.html" class="site-link menu-link link current">Студия</a>
+                    </li>
+                    <li class="site-item">
+                        <a href="./portfolio.html" class="site-link menu-link link">Портфолио</a>
+                    </li>
+                    <li class="site-item">
+                        <a href="/" class="site-link menu-link link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
             <ul class="contact-nav list">
@@ -323,11 +329,7 @@
     </main>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close class="icon-close-black" type="button">
-                <svg class="icon-close">
-                    <use href="./images/symbol.svg#icon-close-black"></use>
-                </svg>
-            </button>
+            <button data-modal-close class="icon-close-black" type="button">✖</button>
         </div>
     </div>
     <footer class="footer">
