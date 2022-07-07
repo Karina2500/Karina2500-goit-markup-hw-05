@@ -633,7 +633,7 @@ justify-content: space-between;
     background: var(--background-color);
     border: 1px solid #EEEEEE;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .photo-portfolio:not:(nth-child(3n)) {
@@ -748,7 +748,7 @@ justify-content: space-between;
     padding: 15px;
 
     background-color: var(--background-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -761,17 +761,30 @@ justify-content: space-between;
     visibility: hidden;
 } 
 
+.icon-close {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
 .icon-close-black {
-position: absolute;
-right: 0;
-top: 0;
-margin: 8px;
-width: 30px;
-height: 30px;
-border-radius: 50%;
-background: var(--background-color);
-border: 1px solid rgba(0, 0, 0, 0.1);
-cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 
@@ -834,6 +847,7 @@ cursor: pointer;
 
 .project {
     display: block;
+    transition: box-shadov 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project:hover,
@@ -864,7 +878,7 @@ cursor: pointer;
     
 
     transform: translateY(101%);
-    transition: transform 250ms ease;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text-action {
