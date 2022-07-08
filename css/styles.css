@@ -401,13 +401,14 @@ justify-content: space-between;
     border-radius: 4px;
 
     text-align: center;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-card-item {
     width: 170px;
     height: 92px;
     fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -632,22 +633,12 @@ justify-content: space-between;
     flex-basis: calc((100% - 90px)/3);
     background: var(--background-color);
     border: 1px solid #EEEEEE;
-
-    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
+    }
 
 .photo-portfolio:not:(nth-child(3n)) {
     margin-right: 30px;
 }
 
-.photo-portfolio:hover,
-.photo-portfolio:focus {
-    box-shadow:
-    0px 1px 1px rgb(0 0 0 / 12%),
-    0px 4px 4px rgb(0 0 0 / 6%),
-    1px 4px 6px rgb(0 0 0 / 16%);
-    cursor: pointer;
-}
 
 .portfolio-text {
     margin-bottom: 4px;
@@ -716,7 +707,6 @@ justify-content: space-between;
     width: 20px;
     height: 20px;
     fill: currentColor;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-team-link:hover,
@@ -847,7 +837,7 @@ justify-content: space-between;
 
 .project {
     display: block;
-    transition: box-shadov 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project:hover,
@@ -882,6 +872,7 @@ justify-content: space-between;
 }
 
 .portfolio-text-action {
+    position: absolute;
     color: var(--background-color);
     font-weight: 400;
     font-size: 18px;
@@ -889,4 +880,6 @@ justify-content: space-between;
     letter-spacing: 0.03em;
     padding: 63px 24px;
     margin: 0;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
