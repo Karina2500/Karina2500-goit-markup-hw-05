@@ -837,7 +837,7 @@ justify-content: space-between;
 
 .project {
     display: block;
-    transition: box-shadow 0ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project:hover,
@@ -854,7 +854,8 @@ justify-content: space-between;
     overflow: hidden;
 }
 
-.photo-portfolio:hover .product-action {
+.project:hover .product-action,
+.project:focus .product-action {
     transform: translateY(0);
 }
 
